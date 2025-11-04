@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    background: #f0f4f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+
+}
+h2 {
+    margin-bottom: 15px;
+}
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.input-group div {
+    width: 48%;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.checkbox-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.checkbox-input input[type="checkbox"] {
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    width: 15px;
+    height: 15px;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkbox-input label {
+    position: absolute;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkbox-input input[type="checkbox"]:checked + label {
+    background: #2f6636;
+}
+.checkbox-input input[type="text"] {
+    padding-left: 30px;
+    text-align: left;
+}
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input{
+    padding-right: 3px;
+}
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+.query-type {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.query-type div {
+    width: 48%;
+    display: flex;
+    align-items: center;
+}
+.consent-area {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.consent-area input {
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+button {
+    background-color: #2f6636;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.message-box {
+    background: #2f6636;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
